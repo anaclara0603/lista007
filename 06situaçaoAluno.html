@@ -1,0 +1,20 @@
+<script>
+    const media = Number (prompt("Media anual aluno:"))
+    const aulas = Number (prompt(`Quantidade de aulas no ano`))
+    const faltas = Number (prompt("Numero de faltas: "))
+
+    const frequencia = (faltas*100) / aulas
+
+    if (frequencia >= 25) {
+        document.write (`Reprovado por faltas.`)
+    } else if (frequencia <= 75) {
+        document.write (`Aprovado`)
+    }
+
+    if (media < 7) {
+        document.write (`</br>Reprovado por notas.`)
+    } else if (media <= 7){
+        (`Aprovado.`)
+    }
+    
+</script>

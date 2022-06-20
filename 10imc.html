@@ -1,0 +1,37 @@
+<script>
+    const sexo = prompt("Informe seu genero biologico:")
+    const altura = Number(prompt("Informe sua altura: "))
+    const peso = Number(prompt("Informe seu peso: "))
+
+    if (sexo == "feminino" || sexo == "mulher") {
+        const imcFeminino = peso / (altura * altura)
+    } else if (imcFeminino >= 17 && imcFeminino <= 18.49) {
+        document.write(`Abaixo do peso.`)
+    } else if (imcFeminino >= 18.5 && imcFeminino <= 24.99) {
+        document.write(`Peso normal.`)
+    } else if (imcFeminino >= 25 && imcFeminino <= 29.99) {
+        document.write (`Acima do peso`)
+    } else if (imcFeminino >= 30 && imcFeminino <= 34.99) {
+        document.write (`Obesidade I`)
+    } else if (imcFeminino >= 35 && imcFeminino <= 39.99) {
+        document.write (`Obesidade II`)
+    } else if (imcFeminino > 40) {
+        document.write (`Obesidade III`)
+    }
+
+    if (sexo == "masculino" || sexo == "homem") {
+        const imcMasculino = peso / (altura * altura)
+    } else if (imcFeminino >= 18.5) {
+        document.write(`Abaixo do peso.`)
+    } else if (imcFeminino >= 18.5 && imcFeminino <= 24.99) {
+        document.write(`Peso normal.`)
+    } else if (imcFeminino >= 25 && imcFeminino <= 29.99) {
+        document.write (`Acima do peso`)
+    } else if (imcFeminino >= 30 && imcFeminino <= 34.99) {
+        document.write (`Obesidade I`)
+    } else if (imcFeminino >= 35 && imcFeminino <= 39.99) {
+        document.write (`Obesidade II`)
+    } else if (imcFeminino > 40) {
+        document.write (`Obesidade III`)
+    }
+</script>

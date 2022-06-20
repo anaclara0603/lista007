@@ -1,0 +1,23 @@
+<script>
+    const preco = Number (prompt("Preço do produto: "))
+
+
+    if (preco <= 280) {
+        const aumento1 = preco * 0.2 + preco
+        document.write(`aumento 20%`)
+        document.write(`</br>Preço final: ${aumento1}`)
+    } else if (preco <= 700) {
+        const aumento2 = preco * 0.15 + preco
+        document.write(`aumento 15%`)
+        document.write(`</br>Preço final: ${aumento2}`)
+    } else if (preco <= 1500 && preco > 700) {
+        const aumento3 = preco * 0.10 + preco
+        document.write(`aumento 10%`)
+        document.write(`</br>Preço final: ${aumento3}`)
+    } else if (preco > 1500) {
+        const aumento4 = preco * 0.05 + preco
+        document.write(`aumento 5%`)
+        document.write(`</br>Preço final: ${aumento4}`)
+    }
+
+</script>

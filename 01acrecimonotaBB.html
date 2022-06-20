@@ -1,0 +1,17 @@
+<script>
+    //Entrada
+    const nota1LB = parseInt (prompt("Nota LB antes da ajuda: "))
+    const nota2LB = parseInt (prompt("Nota LB depois da ajuda: "))
+
+    //porcessamento
+    const diferenca = nota1LB - nota2LB 
+    const acrecimo = diferenca / 4
+
+    //saida
+    if (diferenca > 0) {
+        document.write(`Acrescimo: ${acrecimo}`)
+    } else {
+        document.write (`Não ouve acrescimo.`)
+    }
+    
+</script>
